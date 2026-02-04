@@ -1,0 +1,106 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #161616;
+    color: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #0a0a0a;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 128, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: #00ff88;
+    margin-bottom: 2rem;
+}
+
+.balance-card {
+    background: #222;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    border: 1px solid #333;
+}
+
+.balance-card h3 {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+    font-weight: 400;
+}
+
+.balance-card h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.action-group {
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #111;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.deposit-btn {
+    background-color: #00ff88;
+    color: #000;
+}
+
+.deposit-btn:hover {
+    background-color: #00db75;
+}
+
+.withdraw-btn {
+    background-color: #ff3333;
+    color: #fff;
+}
+
+.withdraw-btn:hover {
+    background-color: #cc0000;
+}
+
+.message {
+    margin-top: 1.5rem;
+    min-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #ccc;
+    text-decoration: underline;
+}

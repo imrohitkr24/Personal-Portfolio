@@ -4,54 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App - Coming Soon</title>
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #161616;
-            color: #ededed;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        h1 {
-            font-size: 3rem;
-            color: #00eeff;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            font-size: 1.2rem;
-            color: #ccc;
-        }
-
-        a {
-            margin-top: 2rem;
-            color: #9f36ff;
-            text-decoration: none;
-            font-size: 1.1rem;
-            border: 1px solid #9f36ff;
-            padding: 10px 20px;
-            border-radius: 20px;
-            transition: 0.3s;
-        }
-
-        a:hover {
-            background-color: #9f36ff;
-            color: #fff;
-        }
-    </style>
 </head>
 
 <body>
-    <h1>Quiz App</h1>
-    <p>This project is currently under development.</p>
-    <a href="../../index.html">Back to Portfolio</a>
+    <div class="container">
+        <div id="quiz-container">
+            <h2 id="question">Question Text</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Answer A</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Answer B</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Answer C</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">Answer D</label>
+                </li>
+            </ul>
+            <button id="submit">Submit</button>
+        </div>
+        <a href="../../index.html" class="back-link">Back to Portfolio</a>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

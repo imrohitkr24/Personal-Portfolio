@@ -1,0 +1,122 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #161616;
+    color: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+h1 {
+    text-align: center;
+    color: #00eeff;
+    margin-bottom: 2rem;
+}
+
+.task-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+input {
+    width: 300px;
+    background: #222;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+select {
+    background: #222;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+button {
+    background: #00eeff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00c3d1;
+}
+
+.boards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.board {
+    background: #0a0a0a;
+    padding: 1rem;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.board h3 {
+    text-align: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+#todo-board {
+    border-top: 3px solid #ff3333;
+}
+
+#progress-board {
+    border-top: 3px solid #ffff33;
+}
+
+#done-board {
+    border-top: 3px solid #00ff88;
+}
+
+.task-card {
+    background: #222;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-card button {
+    background: transparent;
+    color: #ff3333;
+    padding: 5px;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    color: #9f36ff;
+    text-decoration: none;
+}

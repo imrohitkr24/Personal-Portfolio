@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #161616;
+    color: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #0a0a0a;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 128, 0.2);
+    /* Green accent */
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    color: #00ff88;
+    margin-bottom: 2rem;
+}
+
+.timer-display {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    color: #fff;
+    font-variant-numeric: tabular-nums;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#startBtn {
+    background-color: #00ff88;
+    color: #000;
+}
+
+#startBtn:hover {
+    box-shadow: 0 0 15px #00ff88;
+}
+
+#stopBtn {
+    background-color: #ff3333;
+    color: #fff;
+}
+
+#stopBtn:hover {
+    box-shadow: 0 0 15px #ff3333;
+}
+
+#resetBtn {
+    background-color: #33aaff;
+    color: #fff;
+}
+
+#resetBtn:hover {
+    box-shadow: 0 0 15px #33aaff;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #fff;
+}

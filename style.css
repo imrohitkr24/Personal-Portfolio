@@ -184,6 +184,7 @@ section {
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
     background: -webkit-linear-gradient(var(--main-color), var(--accent-color));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -245,7 +246,7 @@ section {
 
 /* Image Animations */
 .hero-img img {
-    width: 35vw;
+    width: 25vw;
     animation: zoomIn 1s ease forwards, float 4s ease-in-out infinite;
     border-radius: 50%;
     box-shadow: 0 0 20px var(--main-color);
@@ -613,7 +614,7 @@ footer {
     }
 
     .hero-img img {
-        width: 70vw;
+        width: 50vw;
         margin-top: 4rem;
     }
 

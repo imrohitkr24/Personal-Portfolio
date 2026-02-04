@@ -4,8 +4,6 @@ const navLinks = document.querySelector('.nav-links');
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-    // Animate hamburger to X
-    // Basic implementation; for now let's just toggle menu
 });
 
 /* Close mobile menu when link is clicked */
@@ -23,19 +21,11 @@ const typed = new Typed('.typing-text', {
     loop: true
 });
 
-/* Scroll Reveal (Simple Intersection Observer) - Optional if CSS animations are enough on load */
-/* CSS animations used for entrance. This script handles sticky header state mostly if needed, 
-   but sticky is handled by CSS here perfectly. 
-   We can add active link highlighting on scroll. 
-*/
-
+/* Scroll Active Link & Sticky Header */
 const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('header nav ul li a');
 
 window.onscroll = () => {
-    /* Sticky Header Background specific adjust if needed, but current CSS is fine */
-    
-    /* Scroll Active Link */
     var current = "";
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
@@ -51,3 +41,29 @@ window.onscroll = () => {
         }
     });
 };
+
+/* EmailJS Contact Form Handling */
+window.onload = function () {
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // these IDs from the previous steps
+        const serviceID = 'YOUR_SERVICE_ID';
+        const templateID = 'YOUR_TEMPLATE_ID';
+
+        // Change button text to indicate sending
+        const btn = this.querySelector('input[type="submit"]');
+        const originalBtnValue = btn.value;
+        btn.value = 'Sending...';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.value = originalBtnValue;
+                alert('Sent!');
+                document.getElementById('contact-form').reset();
+            }, (err) => {
+                btn.value = originalBtnValue;
+                alert(JSON.stringify(err));
+            });
+    });
+}

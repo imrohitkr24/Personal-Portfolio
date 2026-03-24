@@ -229,7 +229,7 @@ section {
 
 /* Image Animations */
 .hero-img img {
-    width: 25vw;
+    width: 20vw;
     animation: zoomIn 1s ease forwards, float 4s ease-in-out infinite;
     border-radius: 50%;
     box-shadow: 0 0 20px var(--main-color);
@@ -367,6 +367,31 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.thumbnail-img {
+    background: transparent;
+    padding: 0;
+}
+
+.thumbnail-img img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.major-card {
+    flex: 1 1 50rem;
+    max-width: 60rem;
+}
+
+.major-card .project-img {
+    height: 300px;
+}
+
+.major-card .btn {
+    margin-top: 1rem;
 }
 
 .project-info {
@@ -640,7 +665,7 @@ footer {
     }
 
     .hero-img img {
-        width: 50vw;
+        width: 40vw;
         margin-top: 4rem;
     }
 

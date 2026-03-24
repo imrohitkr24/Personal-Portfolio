@@ -360,7 +360,7 @@ section {
 }
 
 .project-img {
-    height: 200px;
+    height: 100px;
     width: 100%;
     background: #333;
     /* Placeholder color */
@@ -372,12 +372,13 @@ section {
 .thumbnail-img {
     background: transparent;
     padding: 0;
+    overflow: hidden;
 }
 
 .thumbnail-img img {
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     display: block;
 }
 
@@ -387,7 +388,7 @@ section {
 }
 
 .major-card .project-img {
-    height: 300px;
+    height: auto;
 }
 
 .major-card .btn {
